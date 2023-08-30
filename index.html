@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Obsidian Vault</title>
+</head>
+<body>
+<h1>My Obsidian Vault</h1>
+<ul>
+{% for note in notes %}
+<li><a href="{{ note.path }}">{{ note.title }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
